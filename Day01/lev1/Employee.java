@@ -1,3 +1,16 @@
+public class Main {
+    public static void main(String[] args) {
+        // Create an employee object
+        Employee employee = new Employee("John Doe", 101, 55000.0);
+        
+        // Display employee details
+        employee.displayDetails();
+    }
+}
+
+
+
+
 // Employee.java
 class Employee {
     // Instance variables (attributes)
@@ -21,12 +34,4 @@ class Employee {
     }
 }
 
-public class Main {
-    public static void main(String[] args) {
-        // Create an employee object
-        Employee employee = new Employee("John Doe", 101, 55000.0);
-        
-        // Display employee details
-        employee.displayDetails();
-    }
-}
+
