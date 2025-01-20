@@ -21,7 +21,7 @@ public class Book {
 		}
 
 
-    // Method to display account details
+    // Method to display book details
     public void displayBookDetails() {
         if (this instanceof Book) {
 			 System.out.println("Library name: " + libraryName);
@@ -32,12 +32,12 @@ public class Book {
     }
 
     public static void main(String[] args) {
-        // Creating bank account objects
+        // Creating book objects
         Book book1 = new Book("The story", "Hero Hiralal", "Abc123");
         Book book2 = new Book("Okay story", "Anshi Patel", "12acv");
 
 
-       // Displaying account details
+       // Displaying book details
         book1.displayBookDetails();
 		
         book2.displayBookDetails();
