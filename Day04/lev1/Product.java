@@ -9,8 +9,8 @@ public class Main {
         Product product3 = new Product("Headphones", 89.99);
 
         // Create Customers
-        Customer customer1 = new Customer("Alice", "alice@example.com");
-        Customer customer2 = new Customer("Bob", "bob@example.com");
+        Customer customer1 = new Customer("Sumit", "alice@example.com");
+        Customer customer2 = new Customer("Kumar", "bob@example.com");
 
         // Create Orders and add Products
         Order order1 = new Order(customer1);
