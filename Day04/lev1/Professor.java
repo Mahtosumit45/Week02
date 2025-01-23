@@ -14,15 +14,20 @@ public class Main {
         // Create courses
         Course course1 = new Course("Data Structures");
         Course course2 = new Course("Calculus");
+        Course course3 = new Course("Matrix");
 
         // Assign professors to courses
         professor1.teachCourse(course1);
         professor2.teachCourse(course2);
+		 professor2.teachCourse(course3);
 
         // Students enroll in courses
         student1.enrollCourse(course1);
+		 student1.enrollCourse(course2);
         student2.enrollCourse(course1);
         student2.enrollCourse(course2);
+		 student2.enrollCourse(course3);
+
 
         // Display course details
         System.out.println("\nCourse Details:");
