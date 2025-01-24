@@ -1,18 +1,18 @@
 import java.util.Scanner;
 public class AnimalClass{
 	public static void main(String[] args){
-		Animal dog = new Dog("Dog",2);
+		Animal dog = new Dog("Husky",2);
 		dog.makeSound();
-		Animal cat = new Cat("Cat",3);
+		Animal cat = new Cat("Kitty",3);
 		cat.makeSound();
-		Animal bird = new Bird("Bird",3);
+		Animal bird = new Bird("Sweety",3);
 		bird.makeSound();
 	}
 }
 
 class Animal{
-	private String name;
-	private int age;
+	protected String name;
+	protected int age;
 	Animal(String name, int age){
 		this.name = name;
 		this.age =age;
@@ -26,7 +26,7 @@ class Dog extends Animal{
         super(name, age);
     }
 	public void makeSound(){
-		System.out.println("Dog barks");
+		System.out.println(name+" barks");
 	}
 }
 class Cat extends Animal{
@@ -34,7 +34,7 @@ class Cat extends Animal{
         super(name, age);
     }
 	public void makeSound(){
-		System.out.println("Cog meow");
+		System.out.println(name+" meow");
 	}
 }
 class Bird extends Animal{
@@ -42,6 +42,6 @@ class Bird extends Animal{
         super(name, age);
     }
 	public void makeSound(){
-		System.out.println("Bird chirps");
+		System.out.println(name+" chirps");
 	}
 }
