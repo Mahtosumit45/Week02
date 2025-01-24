@@ -1,47 +1,38 @@
 import java.util.Scanner;
-public class AnimalClass{
+public class EmployeeManagementSystem{
 	public static void main(String[] args){
-		Animal dog = new Dog("Husky",2);
-		dog.makeSound();
-		Animal cat = new Cat("Kitty",3);
-		cat.makeSound();
-		Animal bird = new Bird("Sweety",3);
-		bird.makeSound();
+	
 	}
 }
 
-class Animal{
+class Employee{
 	protected String name;
-	protected int age;
-	Animal(String name, int age){
+	protected int id;
+	protected double salary;
+	Employee(String name, int id, double salary){
 		this.name = name;
-		this.age =age;
+		this.age = age;
+		this.salary = salary
 	}
-	public void makeSound(){
-		System.out.println("Animal makes sound ");
-	}
-}
-class Dog extends Animal{
-	public Dog(String name, int age) {
-        super(name, age);
-    }
-	public void makeSound(){
-		System.out.println(name+" barks");
+	public void displayDetails(){
+		System.out.println(this.name + this.age + this.salary);
 	}
 }
-class Cat extends Animal{
-	public Cat(String name, int age) {
-        super(name, age);
+class Manager extends Employee{
+	int teamSize;
+	public Manager(String name, int age, double salary, int teamSize) {
+       	super(name, age, salary, teamSize);
     }
-	public void makeSound(){
-		System.out.println(name+" meow");
-	}
 }
-class Bird extends Animal{
-	public Bird(String name, int age) {
-        super(name, age);
+class Developer extends Employee{
+	String programingLanguage;
+	public Developer(String name, int age, double salary, String programingLanguage) {
+        super(name, age, salary, programingLanguage);
     }
-	public void makeSound(){
-		System.out.println(name+" chirps");
-	}
+}
+class Intern extends Employee{
+	int totalIntern;
+	public Bird(String name, int age, double salary, int totalIntern) {
+        super(name, age, salary, totalIntern);
+    }
 }
