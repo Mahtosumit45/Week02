@@ -1,4 +1,5 @@
-import java.util.Scanner;
+package EmployeeManagement;
+
 public class EmployeeManagementSystem{
 	public static void main(String[] args){
 	Employee manager = new Manager("Sumit", 101, 120000, 11);
@@ -33,7 +34,7 @@ class Manager extends Employee{
  @Override
     public void displayDetails() {
         super.displayDetails();
-        System.out.println("Role: Manager, Team Size: " + teamSize);
+        System.out.println("Role: EmployeeManagement.Manager, Team Size: " + teamSize);
     }
 }
 class Developer extends Employee{
@@ -45,7 +46,7 @@ class Developer extends Employee{
 	 @Override
     public void displayDetails() {
         super.displayDetails();
-        System.out.println("Role: Developer, Programming Language: " + pLanguage);
+        System.out.println("Role: EmployeeManagement.Developer, Programming Language: " + pLanguage);
     }
 }
 class Intern extends Employee{
@@ -57,6 +58,6 @@ class Intern extends Employee{
  @Override
     public void displayDetails() {
         super.displayDetails();
-        System.out.println("Role: Intern, Join Year: " + joinYear);
+        System.out.println("Role: EmployeeManagement.Intern, Join Year: " + joinYear);
     }
 }
